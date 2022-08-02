@@ -24,7 +24,7 @@ WurmMapGen.markers = {
 		// Classic style1 (letter-based) markers
 		if (WurmMapGen.config.markerType === 1) {
 			if (itemType === 'guardtower') { return WurmMapGen.markers.style1.guardtower; }
-			if (itemType === 'player') { return WurmMapGen.markers.style1.player; }
+			// if (itemType === 'player') { return WurmMapGen.markers.style1.player; }
 			if (itemType === 'portal') { return WurmMapGen.markers.style2.portal; }
 
 			if (item.permanent) { return WurmMapGen.markers.style1.main; }
@@ -34,7 +34,7 @@ WurmMapGen.markers = {
 		// Updated village size markers based on citizen count
 		if (WurmMapGen.config.markerType === 2) {
 			if (itemType === 'guardtower') { return WurmMapGen.markers.style2.guardtower; }
-			if (itemType === 'player') { return WurmMapGen.markers.style2.player; }
+			// if (itemType === 'player') { return WurmMapGen.markers.style2.player; }
 			if (itemType === 'portal') { return WurmMapGen.markers.style2.portal; }
 
 			if (item.citizens < 2) { return WurmMapGen.markers.style2.village_solo; }
@@ -45,7 +45,7 @@ WurmMapGen.markers = {
 		// Text labels
 		if (WurmMapGen.config.markerType === 3) {
 			if (itemType === 'guardtower') { return WurmMapGen.markers.style3.guardtower; }
-			if (itemType === 'player') { return WurmMapGen.markers.style3.player; }
+			// if (itemType === 'player') { return WurmMapGen.markers.style3.player; }
 			if (itemType === 'portal') { return WurmMapGen.markers.style3.portal; }
 
 			return L.divIcon({
@@ -87,7 +87,7 @@ WurmMapGen.markers = {
 		letter_z: new markerIcon({iconUrl: 'markers/letter_z.png'}),
 
 		main: new markerIcon({iconUrl: 'markers/main.png'}),
-		player: new markerIcon({iconUrl: 'markers/player.png'}),
+		// player: new markerIcon({iconUrl: 'markers/player.png'}),
 		guardtower: new markerIcon({iconUrl: 'markers/guardtower.png'})
 	},
 
@@ -98,14 +98,14 @@ WurmMapGen.markers = {
 		village_large: new markerIcon({iconUrl: 'markers/v2-village-large.png'}),
 
 		portal: new markerIcon({iconUrl: 'markers/v2-portal.png'}),
-		player: new markerIcon({iconUrl: 'markers/v2-player.png'}),
+		// player: new markerIcon({iconUrl: 'markers/v2-player.png'}),
 		guardtower: new markerIcon({iconUrl: 'markers/v2-guardtower.png'})
 	},
 
 	// Simple icons to go with the text labels
 	style3: {
 		portal: new markerIcon({iconUrl: 'markers/v2-portal-icon.png'}),
-		player: new markerIcon({iconUrl: 'markers/v2-player-icon.png'}),
+		// player: new markerIcon({iconUrl: 'markers/v2-player-icon.png'}),
 		guardtower: new markerIcon({iconUrl: 'markers/v2-guardtower-icon.png'})
 	}
 };
